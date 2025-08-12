@@ -52,7 +52,8 @@ function calcularSuma() {
     
     //--------------------Aqui va la solicion del ejercicio 1--------------------
 
-
+    const suma = num1 + num2; 
+    mostrarResultado('resultado-suma',"el resultado es: " +suma);
 
     //--------------------Aqui termina la solicion del ejercicio 1--------------------
 }
@@ -71,7 +72,8 @@ function calcularPromedio() {
 
     //--------------------Aqui va la solicion del ejercicio 2--------------------
 
-
+    const promedio = (prom1 + prom2 + prom3) / 3;
+    mostrarResultado('resultado-promedio',"el resultado es: " +promedio);
 
     //--------------------Aqui termina la solicion del ejercicio 2--------------------
 }
@@ -87,7 +89,8 @@ function calcularEdadDias() {
     
         //--------------------Aqui va la solicion del ejercicio 3--------------------
 
-
+const dias = anos * 365 ;//usa esta 
+mostrarResultado ('resultado-edad',"la edad en dias es: " +dias); 
 
     //--------------------Aqui termina la solicion del ejercicio 3--------------------
 }
@@ -98,11 +101,12 @@ function calcularMinutosAno() {
     const horasPorDia = 24;
     const minutosPorHora = 60;
     
-    const totalMinutos = 0;//usa esta constante para el resultado
+    let totalMinutos = 0;//usa esta constante para el resultado
 
         //--------------------Aqui va la solicion del ejercicio 4--------------------
 
-
+      totalMinutos = diasEnAno * horasPorDia * minutosPorHora;
+      mostrarResultado('resultado-minutos', "Un año tiene:" +totalMinutos);
 
     //--------------------Aqui termina la solicion del ejercicio 4--------------------
     
@@ -122,11 +126,11 @@ function calcularPrecioConImpuesto() {
     }
     
     const impuesto = 0.19; // 19%
-    const valorImpuesto = 0;//usa esta constante para el resultado
-    const precioFinal = 0;//usa esta constante para el resultado
+    const valorImpuesto = precio * impuesto;//usa esta constante para el resultado
+    const precioFinal = precio + valorImpuesto;//usa esta constante para el resultado
 
     //--------------------Aqui va la solicion del ejercicio 5--------------------
-
+      
 
 
     //--------------------Aqui termina la solicion del ejercicio 5--------------------
